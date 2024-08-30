@@ -1,0 +1,6 @@
+@VietNongWebAPI_HostAddress = http://localhost:5144
+
+GET {{VietNongWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
