@@ -1,4 +1,4 @@
-﻿namespace MilkStoreWepAPI.Service
+﻿namespace VietNongWebAPI
 {
     public interface IElasticsearchService<T>
     {

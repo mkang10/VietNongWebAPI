@@ -7,19 +7,27 @@ public partial class Product
 {
     public int ProductId { get; set; }
 
-    public int? SellerId { get; set; }
+    public int? FarmerId { get; set; }
 
-    public string ProductName { get; set; } = null!;
+    public string? Name { get; set; }
+
+    public int? CategoryId { get; set; }
+
+    public decimal? Price { get; set; }
+
+    public decimal? Weight { get; set; }
 
     public string? Description { get; set; }
 
-    public decimal Price { get; set; }
+    public int? StockQuantity { get; set; }
 
-    public int Stock { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
-    public string Category { get; set; } = null!;
+    public virtual Category? Category { get; set; }
 
-    public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+    public virtual User? Farmer { get; set; }
 
-    public virtual User? Seller { get; set; }
+    public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+
+    public virtual ICollection<OrderHistory> OrderHistories { get; set; } = new List<OrderHistory>();
 }

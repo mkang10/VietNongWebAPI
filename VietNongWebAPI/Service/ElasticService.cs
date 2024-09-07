@@ -3,7 +3,7 @@ using Nest;
 using System.Linq.Expressions;
 using System.Reflection.Metadata;
 
-namespace MilkStoreWepAPI.Service
+namespace VietNongWebAPI
 {
     public class ElasticService<T> : IElasticsearchService<T> where T : class
     {

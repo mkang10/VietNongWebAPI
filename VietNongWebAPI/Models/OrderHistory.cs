@@ -5,13 +5,21 @@ namespace VietNongWebAPI.Models;
 
 public partial class OrderHistory
 {
-    public int HistoryId { get; set; }
+    public int OrderHistoryId { get; set; }
+
+    public int? UserId { get; set; }
+
+    public int? ProductId { get; set; }
 
     public int? OrderId { get; set; }
 
-    public string Status { get; set; } = null!;
+    public int? Quantity { get; set; }
 
-    public DateOnly ChangeDate { get; set; }
+    public DateTime? OrderDate { get; set; }
 
     public virtual Order? Order { get; set; }
+
+    public virtual Product? Product { get; set; }
+
+    public virtual User? User { get; set; }
 }
