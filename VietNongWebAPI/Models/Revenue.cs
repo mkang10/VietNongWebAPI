@@ -7,7 +7,7 @@ public partial class Revenue
 {
     public int RevenueId { get; set; }
 
-    public int? FarmerId { get; set; }
+    public int? UserId { get; set; }
 
     public decimal? TotalRevenue { get; set; }
 
@@ -17,5 +17,5 @@ public partial class Revenue
 
     public DateTime? CreatedAt { get; set; }
 
-    public virtual User? Farmer { get; set; }
+    public virtual ApplicationUser User { get; set; }
 }
