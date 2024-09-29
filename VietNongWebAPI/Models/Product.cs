@@ -7,7 +7,7 @@ public partial class Product
 {
     public int ProductId { get; set; }
 
-    public int? FarmerId { get; set; }
+    public int? UserId { get; set; }
 
     public string? Name { get; set; }
 
@@ -25,7 +25,7 @@ public partial class Product
 
     public virtual Category? Category { get; set; }
 
-    public virtual User? Farmer { get; set; }
+    public virtual ApplicationUser User { get; set; }
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 

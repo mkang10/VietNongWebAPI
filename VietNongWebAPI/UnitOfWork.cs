@@ -6,7 +6,7 @@
 //using System.Threading.Tasks;
 //using VietNongWebAPI.Models;
 
-//namespace ClinicData
+//namespace VietNongWebAPI
 //{
 //    public class UnitOfWork
 //    {
